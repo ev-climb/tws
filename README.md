@@ -7,4 +7,4 @@
 
 CSS3, HTML5, JS. Для корректной работы таймера при неактивной вкладке использовал открытый код пользователя turuslan на github
 
-###https://ev-climb.github.io/tws/
+https://ev-climb.github.io/tws/
