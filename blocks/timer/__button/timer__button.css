@@ -1,0 +1,17 @@
+.timer__button {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+} 
+
+.timer__button:hover {
+    box-shadow: 0px 0px 13px 0px #FFFFFF;
+}
+
+.timer__button:active {
+    box-shadow: 0px 0px 13px 0px #6e6d6d;
+}

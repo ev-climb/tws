@@ -1,0 +1,11 @@
+.time_and_music {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1040px) {
+    .time_and_music {
+        justify-content: center;
+    }
+    }

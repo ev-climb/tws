@@ -1,0 +1,18 @@
+.to-do__delete {
+    margin-left: 6px;
+    background: none;
+    background-image: url(../../../images/delete.svg);
+    background-size: cover;
+    width: 1em;
+    height: 1em;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    position: relative;
+    bottom: 1px;
+}
+
+.to-do__delete:hover {
+    transition: 1s;
+    opacity: 0.8;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>TheWorkSpace</title>
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__logo-text">TheWork<span style="color: rgb(102, 206, 94); text-decoration: underline;">S</span>pace</h1>
+    </header>
+    <main class="main">
+        <div class="to-do">
+            <h2 class="to-do__header">Чем займёмся<span class="to-do__blink">?</span></h2>
+            <form class="to-do__container">
+                <input class="to-do__input" type="text" id="description-task">
+                <button class="to-do__button-add" id="add-task-btn"></button>
+            </form>
+            <h3 class="to-do__tasks">Задачи на день:</h3>
+            <div class="to-do__wrapper">
+                
+            </div>
+        </div>
+        <div class="time_and_music">
+            <div class="timer">
+                <p class="timer__time"><time>00:00:00</time></p>
+                <div class="timer__buttons">
+                    <img src="./images/play.svg" class="timer__play timer__button"></img>
+                    <img src="./images/pause.svg" class="timer__pause timer__button"></img>
+                    <img src="./images/stop.svg" class="timer__stop timer__button"></img>
+                </div>   
+            </div>
+            <div class="music">
+                <iframe frameborder="0" style="border:none;width:100%;height:350px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#playlist/music.partners/1855">Слушайте <a href='https://music.yandex.ru/users/music.partners/playlists/1855'>Музыка для продуктивной работы</a> — <a href='https://music.yandex.ru/users/music.partners'>Музыкальная редакция</a> на Яндекс Музыке</iframe>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/HackTimer.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

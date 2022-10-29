@@ -1,0 +1,11 @@
+.to-do__complete {
+    width: 1em;
+    height: 1em;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.to-do__complete:hover {
+    transition: 1s;
+    opacity: 0.8;
+}

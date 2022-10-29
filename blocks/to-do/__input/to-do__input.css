@@ -1,0 +1,14 @@
+.to-do__input {
+    background: white;
+    border: none;
+    width: 300px;
+    height: 30px;
+    padding: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.to-do__input:focus {
+    box-shadow:0 0 20px white;
+}

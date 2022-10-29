@@ -1,0 +1,12 @@
+.main {
+    width: 80vw;
+    max-width: 1366px;
+    display: flex;
+}
+
+@media screen and (max-width: 1040px) {
+    .main {
+        flex-direction: column-reverse;
+        align-items:center
+    }
+}

@@ -1,0 +1,4 @@
+.to-do__item {
+    display: flex;
+    max-width: 500px;
+}

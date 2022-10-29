@@ -1,0 +1,14 @@
+.to-do__blink {
+        -webkit-animation: blink 1s linear infinite;
+        animation: blink 1s linear infinite;
+      }
+      @-webkit-keyframes blink {
+        50% { color: wheat; }
+        51% { color: rgba(14, 187, 4, 0); }
+        100% { color: rgba(14,187,4,0); }
+      }
+      @keyframes blink {
+        50% { color: wheat; }
+        51% { color: rgba(14,187,4,0); }
+        100% { color: rgba(14,187,4,0); }
+      }
