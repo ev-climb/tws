@@ -107,13 +107,21 @@ function add() {
 
 function addTimer() {
     t = setTimeout(add, 1000)
+    start.removeEventListener('click', addTimer)
 }
 
-start.onclick = addTimer
+// start.onclick = addTimer
+
+start.addEventListener('click', addTimer)
+
+
 pause.onclick = function() {
     clearTimeout(t)
+    start.addEventListener('click', addTimer)
 }
 stop.onclick = function() {
+    clearTimeout(t)
+    start.addEventListener('click', addTimer)
     timer.textContent = "00:00:00"
     sec = 0
     min = 0
