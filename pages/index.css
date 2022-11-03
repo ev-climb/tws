@@ -9,6 +9,7 @@
 @import url(../blocks/to-do/__blink/to-do__blink.css);
 @import url(../blocks/to-do/__container/to-do__container.css);
 @import url(../blocks/to-do/__input/to-do__input.css);
+@import url(../blocks/to-do/__buttons/to-do__buttons.css);
 @import url(../blocks/to-do/__button-add/to-do__button-add.css);
 @import url(../blocks/to-do/__tasks/to-do__tasks.css);
 @import url(../blocks/to-do/__wrapper/to-do__wrapper.css);

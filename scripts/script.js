@@ -59,12 +59,20 @@ const completeTask = index => {
     fillHtmlList();
 }
 
+taskInput.addEventListener("input", function(){
+    if (taskInput.value !== '') {
+        taskBtn.removeAttribute('disabled')
+    }
+  })
+
 taskBtn.addEventListener('click', (event) => {
     event.preventDefault()
     tasks.push(new Task(taskInput.value));
     updateLocal();
     fillHtmlList();
     taskInput.value ='';
+    taskBtn.setAttribute('disabled', 'disabled')
+    
 })
 
 const deleteTask = index => {
