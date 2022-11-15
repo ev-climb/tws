@@ -2,6 +2,7 @@
     width: 80vw;
     max-width: 1366px;
     display: flex;
+    padding-bottom: 100px;
 }
 
 @media screen and (max-width: 1040px) {
