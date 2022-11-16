@@ -1,0 +1,22 @@
+.quote {
+    color:white;
+    margin-top: 100px;
+    padding-right: 40px;
+    font-style: italic;
+    height: 180px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1040px) {
+    .quote {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .quote {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}

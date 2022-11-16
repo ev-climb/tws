@@ -135,3 +135,38 @@ stop.onclick = function() {
     min = 0
     hrs = 0
 }
+
+// цитаты
+
+const quoteText = document.querySelector('.quote__text');
+const quoteAuthor = document.querySelector('.quote__autor');
+
+class Api {
+    constructor(options) {
+        this._url = options.url;
+        this._headers = options.headers;
+    }
+
+    _handleResponse(res) {
+        if (res.ok) {
+            return res.json();
+        }
+        return Promise.reject(`Ошибка: ${res.status}`);
+    }
+
+    getInfo(){
+        return fetch(this._url, {
+            headers: this._headers
+        })
+        .then(this._handleResponse)
+    }
+}
+
+const api = new Api({ url: 'https://api.themotivate365.com/stoic-quote'})
+
+api.getInfo()
+    .then((res) => {
+        quoteText.textContent = `«${res.quote}»`;
+        quoteAuthor.textContent = res.author;
+    })
+
